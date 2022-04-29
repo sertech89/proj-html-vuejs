@@ -1,0 +1,40 @@
+@import "./partials/variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+
+.central-container{
+    width: 70%;
+    height: 100%;
+    padding: 0 .4rem;
+    margin: 0 auto;
+}
+.my-text-color{
+    color:$TextColor
+}
+
+.my-bg-green{
+    background-color: $greenColor;
+}
+
+.my-bg-lightgreen{
+    background-color: $lightGreenBg;
+}
+
+.my-dark-bg{
+    background-color: $DarkBg;
+}
+
+.my-light-dark-bg{
+    background-color: $LightDargBG;
+}
+
+.my-border-green{
+    border: 1px solid $greenColor;
+}
+
+.my-text-green{
+    color:$greenColor
+}
+
+.my-text{
+    font-size: .8rem;
+}
