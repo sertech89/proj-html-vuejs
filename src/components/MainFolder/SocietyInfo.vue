@@ -25,7 +25,7 @@
                         <li class="d-flex py-2"
                             :class="(index < vehicleInfos.length-1) ? `border-bottom border-2` : `` "
                             v-for="(vehicle, index) in vehicleInfos" :key="index + `vehicle`">
-                            <img class="w-25 my-bg-lightgreen p-2" :src="require('../assets/img/truck-1.png')" alt="">
+                                <img class="w-25 my-bg-lightgreen p-2" :src="require('../../assets/img/truck-1.png')" alt="">
                             <div class="px-2">
                                 <p class="m-0 fw-bold">{{ vehicle.name }}</p>
                                 <span class="my-text my-text-color">{{ vehicle.infos }}</span>
@@ -36,7 +36,7 @@
                         <h5 class="fw-bold">Certifications</h5>
                         <div class="col-6" v-for="(ceritification, index) in 2" :key="index + `certifcate`">
                             <div class="shadow">
-                                <img class="img-fluid" :src="require(`../assets/img/certificate.png`)" alt="">
+                                <img class="img-fluid" :src="require(`../../assets/img/certificate.png`)" alt="">
                             </div>
                         </div>
                     </div>

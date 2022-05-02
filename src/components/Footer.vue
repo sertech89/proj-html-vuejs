@@ -4,7 +4,7 @@
 
             <div class="central-container">
                 <div class="row">
-                    <div class="col-3 py-2 my-text-color">
+                    <div class="col-3 py-2 my-light-text-color">
                         <a href="#">
                             <img class="w-50" :src="require(`../assets/img/logo.svg`)" alt="">
                         </a>
@@ -12,7 +12,7 @@
                             <li :class="(link.class) ? `my-3`: `my-2`" v-for="(link, index) in companyInfos"
                                 :key="index + `left-links`">
                                 <a :class="(link.class===`button`? `my-button my-border-green`: ``)"
-                                    class="my-text text-decoration-none my-text-color" :href="link.url">
+                                    class="my-text text-decoration-none my-light-text-color" :href="link.url">
                                     <span class="me-2" v-if="link.icon">
                                         <font-awesome-icon :icon="link.icon" /></span>
                                     {{ link.text }}
@@ -23,13 +23,13 @@
 
 
                     <div class="col-3" v-for="(element, index) in footerLinks" :key="index + `footer-links`">
-                        <div class="my-text-color p-4 my-light-dark-bg rounded-card">
+                        <div class="my-light-text-color p-4 my-light-dark-bg rounded-card">
                             <h5 class="text-white fw-bold">{{ element.title }}</h5>
 
                             <ul class="list-unstyled">
                                 <li class="my-text py-1" v-for="(link, index) in element.links"
                                     :key="index + `bot-links`">
-                                    <a class="my-text text-decoration-none my-text-color" :href="link.url">
+                                    <a class="my-text text-decoration-none my-light-text-color" :href="link.url">
                                         <span class="me-1">
                                             <font-awesome-icon icon="fa-solid fa-chevron-right" />
                                         </span>

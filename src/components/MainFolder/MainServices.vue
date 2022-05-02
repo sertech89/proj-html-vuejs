@@ -20,19 +20,19 @@
                     </a>
                     
                 </div>
-                <div class="row">
+                <div class="row pe-0">
                     <div class="col-4" v-for="(jobs, index) in ourServices" :key="index + `jobs`">
                         <div class="text-white py-4 px-4 my-light-dark-bg rounded-card">
                             <div class="d-flex justify-content-between">
                                 <span class="my-bg-lightgreen my-text-green p-3 rounded-circle">
                                     <font-awesome-icon size="xl" :icon="jobs.icon" />
                                 </span>
-                                <span class="my-text-green ">
+                                <a :href="jobs.url" class="my-text-green text-decoration-none">
                                     <font-awesome-icon icon="fa-solid fa-arrow-right" />
-                                </span>
+                                </a>
                             </div>
                             <h5 class="my-4 text-white fw-bold">{{ jobs.title }}</h5>
-                            <p class="my-text my-text-color">{{ jobs.text }}</p>
+                            <p class="my-text my-light-text-color">{{ jobs.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -64,16 +64,19 @@
                     icon:"fa-solid fa-truck-ramp-box",
                     title: "Technology",
                     text: "We are continually focused on developing technology solutions adapted to our client's needs",
+                    url: "#",
                 },
                 {
                     icon:"fa-solid fa-temperature-low",
                     title: "Refeer Cargo",
                     text: "Regular and frequent monitoring from the receipt of the loaded container to final destination",
+                    url: "#",
                 },
                 {
                     icon:"fa-solid fa-boxes-stacked",
                     title: "Dry Cargo",
                     text: "We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care",
+                    url: "#",
                 },
             ]
         }
